@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Headings */
+
+header {
+    background-color: #4b4b4c;
+    color: #f5f6fa;
+    border-bottom: 2px solid #f39c12;
+}
+
+/* Nav */
+
+nav {
+    min-height: 5vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 40rem;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+#sun-icon {
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    color: #f39c12;
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),transparent), url("images/herophoto.jpg");
+    min-height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Poopins", sans-serif;
+    color: white;
+}
+
+#main-h1 {
+    font-size: 5rem;
+    border-bottom: white dashed 2px;
+}
+
+#main-h2 {
+    font-size: 5rem;
+    padding-bottom: 3rem;
+}
+
+#mission {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+#catchphrase {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px black dashed;
+}
+
+p{
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    width: 60%;
+}
+
+/* Button And A Tags */
+
+#menu-btn {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem;
+    border: solid 1px black;
+    border-radius: 0.2rem;
+}
+
+#menu-btn:hover {
+    background-color:gainsboro;
+    color: black;
+    transition: ease-in-out 0.5s;
+}
+
+/* Footer */
+
+#info {
+    display: flex;
+    flex-direction: row;
+    min-height: 10vh;
+    background: darkgray;
+}
+
+#left-content {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+    padding: 1rem;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f39c12;
+    font-size:1.5rem;
+}
+
+span {
+    font-size: 1rem;
+    color: black;
+}
