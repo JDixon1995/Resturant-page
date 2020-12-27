@@ -91,11 +91,13 @@ nav ul li a {
     text-align: center;
     font-family: "Poopins", sans-serif;
     color: white;
+    border-bottom: solid 1px #f39c12;
 }
 
 #main-h1 {
     font-size: 5rem;
     border-bottom: white dashed 2px;
+    margin: 0 auto;
 }
 
 #main-h2 {
@@ -117,14 +119,22 @@ nav ul li a {
     font-size: 2rem;
     padding-bottom: 2rem;
     border-bottom: 2px black dashed;
+    margin: 0 auto;
 }
 
-p{
+p {
     padding-top: 2rem;
     font-size: 1.3rem;
-    width: 60%;
+    width: 70%;
+    text-align: center;
 }
 
+#splash-text {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    padding-left: 50rem;
+}
 /* Button And A Tags */
 
 #menu-btn {
@@ -133,9 +143,11 @@ p{
     cursor: pointer;
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    padding: 0.5rem 1rem 0.5rem;
-    border: solid 1px black;
-    border-radius: 0.2rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: solid 2px black;
+    border-radius: 5rem;
+    margin: 0 auto;
 }
 
 #menu-btn:hover {
@@ -151,14 +163,20 @@ p{
     flex-direction: row;
     min-height: 10vh;
     background: darkgray;
+    border-top: solid 1px #f39c12;
 }
 
 #left-content {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     justify-content: flex-start;
-    padding: 1rem;
+    align-content: space-between;
+    margin: 4rem;
     list-style-type: none;
+}
+
+#left-content li {
+    padding: 2.5rem;
 }
 
 a {
@@ -168,6 +186,9 @@ a {
 }
 
 span {
-    font-size: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 2rem;
     color: black;
 }
